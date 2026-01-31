@@ -1,20 +1,37 @@
-# 忽略用户配置文件
+# 用户配置文件（包含敏感信息）
 config.json
+*.config.json
 
 # Python 缓存
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.pyc
 
 # 虚拟环境
 venv/
 env/
 .venv/
+ENV/
 
 # macOS
 .DS_Store
+.AppleDouble
+.LSOverride
 
 # 临时文件
 *.log
 *.tmp
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# 历史记录（可选，根据需要决定是否忽略）
+# references/price_history.json

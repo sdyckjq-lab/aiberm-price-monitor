@@ -1,1 +1,2 @@
-requests>=2.32.0
+# Aiberm 价格监控工具依赖
+requests>=2.28.0
