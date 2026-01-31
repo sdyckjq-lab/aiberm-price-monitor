@@ -1,4 +1,9 @@
-# aiberm-price-monitor
+---
+name: aiberm-price-monitor
+description: Aiberm API 价格监控与推荐工具。当用户询问模型价格、余额、用量或更便宜替代品时自动触发。支持价格查询、用量统计、余额汇总与模型推荐。
+---
+
+# Aiberm 价格监控技能
 
 **Aiberm API 价格监控与推荐工具**
 
@@ -6,37 +11,87 @@
 
 ---
 
-## 功能特性
+## 触发条件
 
-### 1. 价格查询 (`fetch_prices.py`)
-- 实时获取所有模型的当前价格
-- 自动保存价格历史（最近 30 条记录）
-- 区分文本模型和图片生成模型
-- 支持按模型名筛选
+当用户说以下关键词时，自动使用此技能：
 
-### 2. 余额查询 (`check_balance.py`)
-- 查询账户余额和使用情况
-- 余额预警（低于 ¥5 时提醒）
-- 显示配额使用率和请求统计
-
-### 3. 模型推荐 (`recommend_models.py`)
-- 按类别推荐性价比模型（Claude、GPT、Gemini、DeepSeek 等）
-- 显示整体性价比 TOP 10
-- 为指定模型寻找更便宜的替代品
+- **价格查询**："查询 Aiberm 价格"、"查看模型价格"、"价格监控"、"claude 多少钱"
+- **余额查询**："查询余额"、"我的余额"、"账户余额"、"还剩多少钱"
+- **用量统计**："用量"、"消耗"、"使用情况"、"统计"、"最近用量"
+- **模型推荐**："推荐便宜的模型"、"哪个模型性价比高"、"有没有更便宜的替代品"
+- **价格对比**："为什么这个模型贵"、"anthropic 和 claude 有什么区别"
 
 ---
 
-## 快速开始
+## 快速使用
 
-### 配置系统令牌
+### 1. 查询价格（最常用）
 
-1. 创建配置文件：
 ```bash
-cd "/Users/kangjiaqi/Documents/AiBerm Api/价格skill"
-nano config.json
+# 查询所有模型（按价格排序）
+./run.sh prices
+
+# 只查 Claude 系列
+./run.sh prices claude
+
+# 只查 GPT 系列  
+./run.sh prices gpt
+
+# 查特定模型
+./run.sh prices opus
 ```
 
-2. 填入配置（从 Aiberm 网站获取）：
+### 2. 查询余额
+
+```bash
+./run.sh balance
+```
+
+首次运行会自动打开浏览器登录一次，登录态保存在本地，后续无需再次登录。
+
+输出内容包含：账户余额 + 用量最高模型 Top 3 + 对应价格 + 同类更便宜替代建议。
+
+**输出字段说明**：
+- 账户余额：当前可用余额、历史消耗
+- 用量 Top 3：按消耗金额排序的前三模型
+- 价格：输入/输出价格与平均成本
+- 替代建议：同类模型中更便宜的备选项
+
+**能力维度推荐（可选）**：
+- 创建 `model_capabilities.json` 后，替代建议会优先选择“能力更接近且更便宜”的模型
+- 模板文件：`model_capabilities.example.json`
+
+### 3. 推荐性价比模型
+
+```bash
+./run.sh recommend
+```
+
+---
+
+## 核心发现 - 模型命名规则
+
+**Aiberm 有两套价格体系：**
+
+| 模型名称格式 | 折扣 | 价格示例 |
+|-------------|------|----------|
+| `claude-opus-4-5-20251101` | 1.9折 (19%) | $0.071/token ✅ |
+| `anthropic/claude-opus-4.5` | 原价 (100%) | $0.276/token ❌ |
+
+**结论**：用不带 `anthropic/` 前缀的版本！便宜 4 倍！
+
+**Claude 系列价格排序**（从便宜到贵）：
+1. **claude-haiku-4-5-20251001**: $0.014/token
+2. **claude-sonnet-4-5-20250929**: $0.043/token  
+3. **claude-opus-4-5-20251101**: $0.071/token ✅ **推荐**
+4. **anthropic/claude-opus-4.5**: $0.276/token ❌ 避免
+
+---
+
+## 配置文件
+
+创建 `config.json`（可选，仅用于模型调用）:
+
 ```json
 {
   "system_token": "你的系统访问令牌",
@@ -44,160 +99,11 @@ nano config.json
 }
 ```
 
-**获取系统令牌**：
-- 登录 https://aiberm.com
-- 进入「个人设置 → 安全设置 → 系统访问令牌」
-- 复制令牌并填入 `config.json`
-
----
-
-## 使用方法
-
-### 价格查询
-
-```bash
-cd "/Users/kangjiaqi/Documents/AiBerm Api/价格skill"
-
-# 查询所有模型（按价格排序）
-curl -s "https://aiberm.com/api/pricing" | python3 scripts/quick_fetch.py
-
-# 只查询包含 "claude" 的模型（按价格排序）
-curl -s "https://aiberm.com/api/pricing" | python3 scripts/quick_fetch.py claude
-
-# 只查询包含 "gpt" 的模型
-curl -s "https://aiberm.com/api/pricing" | python3 scripts/quick_fetch.py gpt
-
-# 查询特定模型
-curl -s "https://aiberm.com/api/pricing" | python3 scripts/quick_fetch.py opus
-```
-
-**输出示例**：
-```
-📊 Aiberm 价格查询 - 2026-01-31 13:14
-💰 分组折扣: 0.23
-📦 模型数: 12
-🔍 筛选: claude
-
-----------------------------------------------------------------------
-
-🔹 claude-haiku-4-5-20251001
-   输入: $0.014248/百万token (倍率 0.413x)
-   输出: $0.690000/百万token (倍率 5x)
-   接口: anthropic, openai
-
-🔹 claude-opus-4-5-20251101
-   输入: $0.071243/百万token (倍率 2.065x)
-   输出: $0.690000/百万token (倍率 5x)
-   接口: anthropic, openai
-
-🔹 anthropic/claude-opus-4.5
-   输入: $0.276000/百万token (倍率 8x)
-   输出: $0.690000/百万token (倍率 5x)
-   接口: anthropic, openai
-
-✅ 已保存到历史记录 (共 2 条)
-```
-
-### 余额查询
-
-⚠️ **注意**：余额查询需要使用 **系统访问令牌**（与 API Key 不同）
-
-```bash
-cd "/Users/kangjiaqi/Documents/AiBerm Api/价格skill"
-
-# 配置你的系统令牌
-echo '{"system_token": "你的系统令牌"}' > config.json
-
-# 查询余额
-python3 scripts/check_balance.py
-```
-
-**输出示例**：
-```
-💰 Aiberm 账户余额
-⏰ 查询时间: 2026-01-31 11:55:06
-
-👤 用户信息
-   用户名: user123
-   邮箱: user@example.com
-   用户组: default
-
-💵 配额信息
-   总配额: ¥100.00
-   已使用: ¥23.50
-   剩余: ¥76.50
-   使用率: 23.5%
-```
-
-**常见问题**：
-- 如果提示 "New-Api-User not provided"，说明令牌格式不对
-- 系统令牌需要包含特定的 JWT 格式，不是简单的字符串
-
-💵 配额信息
-   总配额: ¥100.00
-   已使用: ¥23.50
-   剩余: ¥76.50
-   使用率: 23.5%
-```
-
-### 模型推荐
-
-```bash
-# 显示整体性价比 TOP 10
-python scripts/recommend_models.py
-
-# 按类别推荐（Claude、GPT、Gemini 等）
-python scripts/recommend_models.py --category
-
-# 为指定模型寻找替代品
-python scripts/recommend_models.py --alternative claude-opus-4-5-20251101
-```
-
-**输出示例**：
-```
-🏆 整体性价比 TOP 10
-────────────────────────────────────────
-
- 1. openai/gpt-5-nano
-    平均成本: $0.028075/百万token
-    倍率: 输入 0.031x, 输出 8x
-    接口: openai
-
- 2. openai/gpt-4o-mini
-    平均成本: $0.03956/百万token
-    倍率: 输入 0.075x, 输出 4x
-    接口: openai
-```
-
----
-
-## 触发关键词（在 Claude 对话中使用）
-
-当你对 Claude 说以下关键词时，我会自动调用此 skill：
-
-- **价格查询**：
-  - "查询 Aiberm 价格"
-  - "查看模型价格"
-  - "价格监控"
-  - "claude 多少钱"
-
-- **余额查询**：
-  - "查询余额"
-  - "我的余额"
-  - "账户余额"
-  - "还剩多少钱"
-
-- **模型推荐**：
-  - "推荐便宜的模型"
-  - "哪个模型性价比高"
-  - "有没有更便宜的替代品"
-  - "帮我找个便宜的 claude"
+⚠️ **重要**: `config.json` 已被 `.gitignore` 排除，不会提交到 Git，安全！
 
 ---
 
 ## 价格计算公式
-
-Aiberm 基于 NewAPI 项目，价格计算公式为：
 
 ```
 实际价格 = 基准价格 × 模型倍率 × 分组折扣
@@ -207,110 +113,50 @@ Aiberm 基于 NewAPI 项目，价格计算公式为：
 - 输出：$0.6/百万token
 
 示例（claude-opus-4-5-20251101-thinking）：
-- 输入：$0.15 × 2.065 × 0.23 = $0.071095/百万token
+- 输入：$0.15 × 2.065 × 0.23 = $0.071/百万token
 - 输出：$0.6 × 5 × 0.23 = $0.69/百万token
 ```
 
 **分组折扣**：
 - `default` 组：0.23（23% 的原价，即 7.7 折）
-- `vip` 组：1.0（原价）
 
 ---
 
-## 数据存储
+## 可用脚本
 
-```
-价格skill/
-├── config.json                 # 用户配置（不提交到 Git）
-└── references/
-    └── price_history.json      # 价格历史（最近 30 条）
-```
+所有脚本位于 `scripts/` 目录：
 
-**price_history.json 结构**：
-```json
-[
-  {
-    "timestamp": "2026-01-31T11:55:06",
-    "data": {
-      "data": [...],
-      "group_ratio": { "default": 0.23 }
-    }
-  }
-]
-```
+| 脚本 | 功能 | 使用方式 |
+|------|------|---------|
+| `fetch_prices.py` | 完整版价格查询 | `python3 scripts/fetch_prices.py [关键词]` |
+| `quick_fetch.py` | 轻量版（推荐） | `curl -s API | python3 scripts/quick_fetch.py [关键词]` |
+| `skill_report.py` | 余额+用量+推荐汇总 | `python3 scripts/skill_report.py` |
+| `recommend_models.py` | 模型推荐 | `python3 scripts/recommend_models.py` |
+| `run.sh` | 统一启动脚本 | `./run.sh prices/balance/recommend` |
 
 ---
 
-## API 参考
+## 技术细节
 
-### 公开 API（无需认证）
-- **价格查询**：`GET https://aiberm.com/api/pricing`
+### API 端点
+- **价格查询**（公开）: `GET https://aiberm.com/api/pricing`
+- **用户余额**（需认证）: `GET https://aiberm.com/api/user/self`
+- **用量统计**（需认证）: `GET https://aiberm.com/api/data/self`
 
-### 需要系统令牌的 API
-- **用户余额**：`GET https://aiberm.com/api/user/self`
-  - Header: `Authorization: Bearer {system_token}`
-
-### API Key vs 系统令牌
-
-| 功能 | API Key | 系统令牌 |
-|------|---------|---------|
-| 调用 AI 模型 | ✅ | ❌ |
-| 查询余额 | ❌ | ✅ |
-| 查看使用记录 | ❌ | ✅ |
-| 账户管理 | ❌ | ✅ |
+### 数据存储
+- 价格历史自动保存在 `references/price_history.json`
+- 保留最近 30 条记录
 
 ---
 
-## 注意事项
+## 开源地址
 
-### 安全
-- **不要将 `config.json` 提交到 Git**
-- 系统令牌具有账户管理权限，妥善保管
-- 建议定期更换系统令牌
-
-### GitHub 分享
-- 本 skill 已配置 `.gitignore`，排除敏感配置
-- 可安全分享到 GitHub
-- 其他用户需自行创建 `config.json`
-
-### 价格变动
-- Aiberm 价格可能随时调整
-- 建议定期运行 `fetch_prices.py` 更新数据
-- 历史记录仅保留最近 30 条
-
----
-
-## 常见问题
-
-**Q: 为什么余额查询失败？**  
-A: 检查 `config.json` 中的 `system_token` 是否正确，API Key 无法用于查询余额。
-
-**Q: 价格数据多久更新一次？**  
-A: 每次运行 `fetch_prices.py` 时实时获取，不会自动定时更新。
-
-**Q: 如何找到最便宜的 Claude 模型？**  
-A: 运行 `python scripts/recommend_models.py --category`，查看 Claude 类别的推荐。
-
-**Q: 可以添加价格预警吗？**  
-A: 当前版本需手动运行脚本。可以结合 cron job 实现自动监控（未来版本功能）。
-
----
-
-## 依赖
-
-```bash
-pip install requests
-```
-
-Python 3.7+ 即可运行。
-
----
-
-## 许可
+https://github.com/sdyckjq-lab/aiberm-price-monitor
 
 MIT License - 自由使用和修改
 
 ---
 
-**作者**: Claude × 你的协作  
-**最后更新**: 2026-01-31
+## 更新日志
+
+- **2026-01-31**: 初始版本，支持价格查询、余额查询、模型推荐

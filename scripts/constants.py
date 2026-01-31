@@ -16,6 +16,7 @@ HISTORY_FILE = REFERENCES_DIR / "price_history.json"
 BASE_URL = "https://aiberm.com"
 PRICING_API = f"{BASE_URL}/api/pricing"
 USER_API = f"{BASE_URL}/api/user/self"
+DATA_SELF_API = f"{BASE_URL}/api/data/self"
 
 # 基准价格配置（NewAPI 默认）
 # 输入 $0.15/百万token，输出 $0.6/百万token
@@ -27,6 +28,12 @@ DEFAULT_GROUP_RATIO = 0.23
 
 # 历史记录保留数量
 MAX_HISTORY_RECORDS = 30
+
+# 额度换算 (单位: 美元)
+QUOTA_DIVISOR = 500000
+
+# 余额数据文件
+BALANCE_FILE = REFERENCES_DIR / "balance.json"
 
 # 余额预警阈值（单位：分）
 BALANCE_WARNING_LOW = 500  # 少于5元警告

@@ -27,6 +27,17 @@ ENV/
 *.swo
 *~
 
+# Playwright 登录态与调试文件
+.auth_state.json
+.login_confirm
+debug_*.png
+debug_*.html
+
+# 分析/临时报告
+references/endpoint_analysis.md
+references/balance_solution.md
+references/balance_scrape_debug.json
+
 # IDE
 .vscode/
 .idea/
@@ -35,3 +46,7 @@ ENV/
 
 # 历史记录（可选，根据需要决定是否忽略）
 # references/price_history.json
+references/balance.json
+
+# 本地能力配置
+model_capabilities.json

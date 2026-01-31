@@ -14,9 +14,12 @@
    - 详见 [SECURITY.md](SECURITY.md)
 
 2. **保护你的 API 密钥**
-   - 系统令牌（system_token）是敏感信息
+   - `config.json` 中的密钥信息是敏感信息
    - 不要截图或分享包含 config.json 的内容
-   - 如意外泄露，立即到 Aiberm 网站撤销并重新生成
+
+3. **保护登录态文件**
+   - `.auth_state.json` 等同登录凭证，请勿分享
+   - 可执行 `chmod 600 .auth_state.json` 限制权限
 
 ---
 
@@ -25,6 +28,15 @@
 监控 Aiberm API 的模型价格，帮你找到最便宜的模型，查看账户余额。
 
 ## 2. 快速使用
+
+### 新手一键流程（推荐）
+
+1. 运行命令：
+   ```bash
+   ./run.sh balance
+   ```
+2. 首次会打开浏览器，请手动登录一次
+3. 关闭浏览器后，再次运行同一命令即可自动输出
 
 ```bash
 # 进入目录
@@ -39,7 +51,7 @@ cd "/Users/kangjiaqi/Documents/AiBerm Api/价格skill"
 # 只查 GPT 系列  
 ./run.sh prices gpt
 
-# 查询余额（需要配置系统令牌）
+# 查询余额（首次登录一次）
 ./run.sh balance
 
 # 查看帮助
@@ -87,11 +99,11 @@ cp config.example.json config.json
 }
 ```
 
-### 5.3 获取系统令牌
+### 5.3 一次登录说明
 
-1. 登录 https://aiberm.com
-2. 进入：个人设置 → 安全设置 → 系统访问令牌
-3. 复制令牌并填入 config.json
+- 首次运行 `./run.sh balance` 会打开浏览器
+- 手动登录一次后，登录态保存在 `.auth_state.json`
+- 之后自动查询，无需再次登录
 
 ### 5.4 安全验证
 
@@ -110,30 +122,50 @@ git status
 ## 6. 技术说明
 
 - **价格数据来源**: `https://aiberm.com/api/pricing`（公开 API，无需认证）
+- **余额查询**: `GET https://aiberm.com/api/user/self`（需登录态）
+- **用量统计**: `GET https://aiberm.com/api/data/self`（需登录态）
 - **价格计算**: `基准价 × 模型倍率 × 分组折扣`
   - 基准输入: $0.15/百万token
   - 基准输出: $0.6/百万token
   - 你的分组折扣: 0.23 (23%)
 - **历史记录**: 自动保存在 `references/price_history.json`（最近30条）
 
+## 6.1 能力维度推荐（可选）
+
+为了更合理地推荐替代模型，可以添加能力配置文件：
+
+1. 复制模板：
+   ```bash
+   cp model_capabilities.example.json model_capabilities.json
+   ```
+2. 按模型名称填写：
+   - `context_length`: 上下文长度
+   - `reasoning_score`: 推理能力评分 (0-10)
+   - `speed_score`: 速度评分 (0-10)
+
+配置后，替代推荐会优先选择“能力更接近且更便宜”的模型。
+
 ## 7. 文件结构
 
 ```
 价格skill/
-├── run.sh                 # 启动脚本（用这个）
-├── config.json            # ⚠️ 你的配置（本地创建，不提交）
-├── config.example.json    # 配置示例（可提交）
-├── .gitignore            # Git 忽略规则（保护 config.json）
-├── SECURITY.md           # 安全指南
-├── SKILL.md              # 完整文档
+├── run.sh                   # 启动脚本（用这个）
+├── config.json              # ⚠️ 你的配置（本地创建，不提交）
+├── config.example.json      # 配置示例（可提交）
+├── .auth_state.json         # 登录态（本地保存，不提交）
+├── .gitignore               # Git 忽略规则（保护配置）
+├── SECURITY.md              # 安全指南
+├── SKILL.md                 # 完整文档
 ├── scripts/
-│   ├── fetch_prices.py    # 完整版（需要 venv）
-│   ├── quick_fetch.py     # 轻量版（直接用）
-│   ├── check_balance.py   # 余额查询
-│   └── recommend_models.py # 推荐算法
+│   ├── fetch_prices.py        # 完整版价格查询
+│   ├── quick_fetch.py         # 轻量版（直接用）
+│   ├── skill_report.py        # 余额 + 用量 Top3 + 价格 + 替代建议
+│   ├── fetch_balance_auto.py  # 首次登录保存登录态
+│   └── recommend_models.py    # 推荐算法
 ├── references/
-│   └── price_history.json # 价格历史
-└── venv/                  # Python 虚拟环境
+│   ├── price_history.json     # 价格历史
+│   └── balance.json           # 余额与用量快照
+└── venv/                     # Python 虚拟环境
 ```
 
 ## 8. 后续优化建议

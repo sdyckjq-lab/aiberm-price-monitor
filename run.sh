@@ -9,15 +9,19 @@ show_help() {
     echo ""
     echo "用法:"
     echo "  ./run.sh prices [关键词]     # 查询价格"
-    echo "  ./run.sh balance             # 查询余额"
+    echo "  ./run.sh balance             # 查询余额与用量汇总"
     echo "  ./run.sh recommend           # 推荐性价比模型"
     echo "  ./run.sh help                # 显示帮助"
     echo ""
     echo "示例:"
     echo "  ./run.sh prices              # 查询所有模型"
     echo "  ./run.sh prices claude       # 只查 Claude"
-    echo "  ./run.sh prices gpt          # 只查 GPT"
-    echo "  ./run.sh prices haiku        # 查 Haiku"
+    echo "  ./run.sh balance             # 余额 + 用量 Top3 + 价格 + 替代建议"
+    echo ""
+    echo "说明:"
+    echo "  - balance: 首次运行自动打开浏览器登录一次"
+    echo "  - 登录态保存本地，后续自动查询 API"
+    echo "  - prices: 使用公开 API，无需登录"
 }
 
 case "${1:-help}" in
@@ -35,9 +39,15 @@ case "${1:-help}" in
         echo "🔄 正在查询余额..."
         if [ -f "$VENV_PATH" ]; then
             source "$VENV_PATH"
-            python3 "$SCRIPT_DIR/scripts/check_balance.py"
+        fi
+        if [ -f "$SCRIPT_DIR/.auth_state.json" ]; then
+            python3 "$SCRIPT_DIR/scripts/skill_report.py" || {
+                python3 "$SCRIPT_DIR/scripts/fetch_balance_auto.py"
+                python3 "$SCRIPT_DIR/scripts/skill_report.py"
+            }
         else
-            echo "❌ 虚拟环境不存在，请先创建 venv"
+            python3 "$SCRIPT_DIR/scripts/skill_report.py" || python3 "$SCRIPT_DIR/scripts/fetch_balance_auto.py"
+            python3 "$SCRIPT_DIR/scripts/skill_report.py"
         fi
         ;;
     recommend)

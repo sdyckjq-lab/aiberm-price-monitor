@@ -1,0 +1,7 @@
+{
+  "MODEL_NAME": {
+    "context_length": 200000,
+    "reasoning_score": 9,
+    "speed_score": 6
+  }
+}
