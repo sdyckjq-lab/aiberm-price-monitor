@@ -1,0 +1,2903 @@
+[
+  {
+    "timestamp": "2026-01-31T13:13:38.956932",
+    "data": {
+      "data": [
+        {
+          "model_name": "openai/gpt-4.1-nano",
+          "original_model_name": "gpt-4.1-nano",
+          "quota_type": 0,
+          "model_ratio": 0.028,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 4,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "deepseek/deepseek-v3.2-exp",
+          "original_model_name": "deepseek-v3.2-exp",
+          "quota_type": 0,
+          "model_ratio": 0.45,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 1.5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "minimax/minimax-m2.1",
+          "original_model_name": "minimax-m2.1",
+          "quota_type": 0,
+          "model_ratio": 0.5,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 4.148,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-4.1",
+          "original_model_name": "gpt-4.1",
+          "quota_type": 0,
+          "model_ratio": 1.2,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 4,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "xiaomi/mimo-v2-flash",
+          "original_model_name": "mimo-v2-flash",
+          "quota_type": 0,
+          "model_ratio": 0.21,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 3,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5.2",
+          "quota_type": 0,
+          "model_ratio": 1.5,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "claude-sonnet-4-5-20250929",
+          "quota_type": 0,
+          "model_ratio": 1.239,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "deepseek/deepseek-r1",
+          "original_model_name": "deepseek-r1",
+          "quota_type": 0,
+          "model_ratio": 1.56,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 3.57,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "google/gemini-3-pro",
+          "quota_type": 0,
+          "model_ratio": 1,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 6,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "gemini",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5.1",
+          "original_model_name": "gpt-5.1",
+          "quota_type": 0,
+          "model_ratio": 1,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "x-ai/grok-4.1-fast",
+          "original_model_name": "grok-4-1-fast-reasoning",
+          "quota_type": 0,
+          "model_ratio": 0.34,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 2.5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "anthropic/claude-sonnet-4.5",
+          "quota_type": 0,
+          "model_ratio": 5.2,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5-nano",
+          "original_model_name": "gpt-5-nano",
+          "quota_type": 0,
+          "model_ratio": 0.031,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "kimi-k2.5",
+          "quota_type": 0,
+          "model_ratio": 0.3,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-4o-mini",
+          "original_model_name": "gpt-4o-mini",
+          "quota_type": 0,
+          "model_ratio": 0.05,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 4,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-4.1-mini",
+          "original_model_name": "gpt-4.1-mini",
+          "quota_type": 0,
+          "model_ratio": 0.13,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 4,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "anthropic/claude-haiku-4.5:thinking",
+          "quota_type": 0,
+          "model_ratio": 0.875,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "anthropic/claude-opus-4.5:thinking",
+          "quota_type": 0,
+          "model_ratio": 8,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "gemini-3-pro-preview",
+          "quota_type": 0,
+          "model_ratio": 1,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 6,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "gemini",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5.1-codex-max",
+          "original_model_name": "gpt-5.1-codex-high",
+          "quota_type": 0,
+          "model_ratio": 0.6,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "deepseek/deepseek-v3.2-exp-thinking",
+          "original_model_name": "deepseek-v3.2-exp-thinking",
+          "quota_type": 0,
+          "model_ratio": 0.45,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 1.5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "anthropic/claude-haiku-4.5",
+          "quota_type": 0,
+          "model_ratio": 0.875,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "claude-haiku-4-5-20251001",
+          "quota_type": 0,
+          "model_ratio": 0.413,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "gemini-3-pro-image-preview",
+          "quota_type": 1,
+          "model_ratio": 0,
+          "model_price": 0.13,
+          "owner_by": "",
+          "completion_ratio": 0,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "gemini",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "gpt-image-1.5",
+          "original_model_name": "gpt-image-1.5-c",
+          "quota_type": 1,
+          "model_ratio": 0,
+          "model_price": 0.1553,
+          "owner_by": "",
+          "completion_ratio": 0,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "image-generation",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "google/gemini-3-pro-mcpmark",
+          "original_model_name": "gemini-3-pro-preview-thinking",
+          "quota_type": 0,
+          "model_ratio": 1,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 6,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai",
+            "gemini"
+          ]
+        },
+        {
+          "model_name": "google/gemini-2.5-flash",
+          "original_model_name": "gemini-2.5-flash",
+          "quota_type": 0,
+          "model_ratio": 0.16,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 10,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "gemini",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "google/gemini-3-flash",
+          "original_model_name": "gemini-3-flash-preview-thinking",
+          "quota_type": 0,
+          "model_ratio": 0.18,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "gemini",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "anthropic/claude-opus-4.5",
+          "quota_type": 0,
+          "model_ratio": 8,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "gemini-3-flash-preview",
+          "quota_type": 0,
+          "model_ratio": 0.18,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "gemini",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "claude-sonnet-4-5-20250929-thinking",
+          "quota_type": 0,
+          "model_ratio": 1.239,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5.2-chat",
+          "original_model_name": "gpt-5.2-chat",
+          "quota_type": 0,
+          "model_ratio": 1.5,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "google/gemini-2.5-pro",
+          "original_model_name": "gemini-2.5-pro",
+          "quota_type": 0,
+          "model_ratio": 1,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "gemini",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-4o",
+          "original_model_name": "gpt-4o",
+          "quota_type": 0,
+          "model_ratio": 0.9,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 4,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5-mini",
+          "original_model_name": "gpt-5-mini",
+          "quota_type": 0,
+          "model_ratio": 0.15,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "deepseek/deepseek-v3.2",
+          "original_model_name": "deepseek-v3.2",
+          "quota_type": 0,
+          "model_ratio": 0.45,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 1.5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "claude-opus-4-5-20251101",
+          "quota_type": 0,
+          "model_ratio": 2.065,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "claude-haiku-4-5-20251001-thinking",
+          "quota_type": 0,
+          "model_ratio": 0.413,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5.1-codex",
+          "original_model_name": "gpt-5.1-codex",
+          "quota_type": 0,
+          "model_ratio": 0.6,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "x-ai/grok-code-fast-1",
+          "original_model_name": "grok-code-fast-1",
+          "quota_type": 0,
+          "model_ratio": 0.32,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 7.5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "deepseek/deepseek-r1-0528",
+          "original_model_name": "deepseek-r1-0528",
+          "quota_type": 0,
+          "model_ratio": 0.86,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 4.77,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-image-1.5",
+          "quota_type": 1,
+          "model_ratio": 0,
+          "model_price": 0.1553,
+          "owner_by": "",
+          "completion_ratio": 0,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "image-generation",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5",
+          "original_model_name": "gpt-5",
+          "quota_type": 0,
+          "model_ratio": 1,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "claude-opus-4-5-20251101-thinking",
+          "quota_type": 0,
+          "model_ratio": 2.065,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5.2-codex",
+          "original_model_name": "gpt-5.2",
+          "quota_type": 0,
+          "model_ratio": 1.5,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "anthropic/claude-sonnet-4.5:thinking",
+          "quota_type": 0,
+          "model_ratio": 5.2,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5-codex",
+          "original_model_name": "gpt-5-codex-high",
+          "quota_type": 0,
+          "model_ratio": 0.6,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        }
+      ],
+      "group_ratio": {
+        "default": 0.23,
+        "vip": 1
+      },
+      "success": true,
+      "usable_group": {
+        "": "用户分组",
+        "auto": "auto",
+        "default": "default",
+        "vip": "vip"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-31T13:14:51.498425",
+    "data": {
+      "data": [
+        {
+          "model_name": "openai/gpt-4.1-mini",
+          "original_model_name": "gpt-4.1-mini",
+          "quota_type": 0,
+          "model_ratio": 0.13,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 4,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "kimi-k2.5",
+          "quota_type": 0,
+          "model_ratio": 0.3,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-4o",
+          "original_model_name": "gpt-4o",
+          "quota_type": 0,
+          "model_ratio": 0.9,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 4,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "google/gemini-3-flash",
+          "original_model_name": "gemini-3-flash-preview-thinking",
+          "quota_type": 0,
+          "model_ratio": 0.18,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "gemini",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "x-ai/grok-4.1-fast",
+          "original_model_name": "grok-4-1-fast-reasoning",
+          "quota_type": 0,
+          "model_ratio": 0.34,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 2.5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "claude-opus-4-5-20251101-thinking",
+          "quota_type": 0,
+          "model_ratio": 2.065,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "anthropic/claude-sonnet-4.5",
+          "quota_type": 0,
+          "model_ratio": 5.2,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "anthropic/claude-haiku-4.5:thinking",
+          "quota_type": 0,
+          "model_ratio": 0.875,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5.2-codex",
+          "quota_type": 0,
+          "model_ratio": 0.6,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "google/gemini-3-pro",
+          "quota_type": 0,
+          "model_ratio": 1,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 6,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "gemini",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "anthropic/claude-opus-4.5:thinking",
+          "quota_type": 0,
+          "model_ratio": 8,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5.1-codex",
+          "original_model_name": "gpt-5.1-codex",
+          "quota_type": 0,
+          "model_ratio": 0.6,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "anthropic/claude-haiku-4.5",
+          "quota_type": 0,
+          "model_ratio": 0.875,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "claude-opus-4-5-20251101",
+          "quota_type": 0,
+          "model_ratio": 2.065,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5.1",
+          "original_model_name": "gpt-5.1",
+          "quota_type": 0,
+          "model_ratio": 1,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "deepseek/deepseek-v3.2-exp-thinking",
+          "original_model_name": "deepseek-v3.2-exp-thinking",
+          "quota_type": 0,
+          "model_ratio": 0.45,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 1.5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "gemini-3-flash-preview",
+          "quota_type": 0,
+          "model_ratio": 0.18,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "gemini",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "anthropic/claude-opus-4.5",
+          "quota_type": 0,
+          "model_ratio": 8,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "google/gemini-2.5-flash",
+          "original_model_name": "gemini-2.5-flash",
+          "quota_type": 0,
+          "model_ratio": 0.16,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 10,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "gemini",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-4.1-nano",
+          "original_model_name": "gpt-4.1-nano",
+          "quota_type": 0,
+          "model_ratio": 0.028,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 4,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "xiaomi/mimo-v2-flash",
+          "original_model_name": "mimo-v2-flash",
+          "quota_type": 0,
+          "model_ratio": 0.21,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 3,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "gpt-image-1.5",
+          "quota_type": 1,
+          "model_ratio": 0,
+          "model_price": 0.1553,
+          "owner_by": "",
+          "completion_ratio": 0,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "image-generation",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "claude-sonnet-4-5-20250929",
+          "quota_type": 0,
+          "model_ratio": 1.239,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-4.1",
+          "original_model_name": "gpt-4.1",
+          "quota_type": 0,
+          "model_ratio": 1.2,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 4,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "google/gemini-3-pro-mcpmark",
+          "original_model_name": "gemini-3-pro-preview-thinking",
+          "quota_type": 0,
+          "model_ratio": 1,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 6,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "deepseek/deepseek-r1",
+          "original_model_name": "deepseek-r1",
+          "quota_type": 0,
+          "model_ratio": 1.56,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 3.57,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5.2-chat",
+          "original_model_name": "gpt-5.2-chat",
+          "quota_type": 0,
+          "model_ratio": 1.5,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "x-ai/grok-code-fast-1",
+          "original_model_name": "grok-code-fast-1",
+          "quota_type": 0,
+          "model_ratio": 0.32,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 7.5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "deepseek/deepseek-v3.2-exp",
+          "original_model_name": "deepseek-v3.2-exp",
+          "quota_type": 0,
+          "model_ratio": 0.45,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 1.5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5-nano",
+          "original_model_name": "gpt-5-nano",
+          "quota_type": 0,
+          "model_ratio": 0.031,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "claude-haiku-4-5-20251001-thinking",
+          "quota_type": 0,
+          "model_ratio": 0.413,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5.2",
+          "original_model_name": "gpt-5.2",
+          "quota_type": 0,
+          "model_ratio": 1.5,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5-mini",
+          "original_model_name": "gpt-5-mini",
+          "quota_type": 0,
+          "model_ratio": 0.15,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5.1-codex-max",
+          "original_model_name": "gpt-5.1-codex-high",
+          "quota_type": 0,
+          "model_ratio": 0.6,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "deepseek/deepseek-r1-0528",
+          "original_model_name": "deepseek-r1-0528",
+          "quota_type": 0,
+          "model_ratio": 0.86,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 4.77,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-image-1.5",
+          "original_model_name": "gpt-image-1.5-c",
+          "quota_type": 1,
+          "model_ratio": 0,
+          "model_price": 0.1553,
+          "owner_by": "",
+          "completion_ratio": 0,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "image-generation",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "claude-haiku-4-5-20251001",
+          "quota_type": 0,
+          "model_ratio": 0.413,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "gemini-3-pro-preview",
+          "quota_type": 0,
+          "model_ratio": 1,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 6,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "gemini",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "claude-sonnet-4-5-20250929-thinking",
+          "quota_type": 0,
+          "model_ratio": 1.239,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5-codex",
+          "original_model_name": "gpt-5-codex-high",
+          "quota_type": 0,
+          "model_ratio": 0.6,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "deepseek/deepseek-v3.2",
+          "original_model_name": "deepseek-v3.2",
+          "quota_type": 0,
+          "model_ratio": 0.45,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 1.5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "google/gemini-2.5-pro",
+          "original_model_name": "gemini-2.5-pro",
+          "quota_type": 0,
+          "model_ratio": 1,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "gemini",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5",
+          "original_model_name": "gpt-5",
+          "quota_type": 0,
+          "model_ratio": 1,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "minimax/minimax-m2.1",
+          "original_model_name": "minimax-m2.1",
+          "quota_type": 0,
+          "model_ratio": 0.5,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 4.148,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-4o-mini",
+          "original_model_name": "gpt-4o-mini",
+          "quota_type": 0,
+          "model_ratio": 0.05,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 4,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "anthropic/claude-sonnet-4.5:thinking",
+          "quota_type": 0,
+          "model_ratio": 5.2,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "gemini-3-pro-image-preview",
+          "quota_type": 1,
+          "model_ratio": 0,
+          "model_price": 0.13,
+          "owner_by": "",
+          "completion_ratio": 0,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "gemini",
+            "openai"
+          ]
+        }
+      ],
+      "group_ratio": {
+        "default": 0.23,
+        "vip": 1
+      },
+      "success": true,
+      "usable_group": {
+        "": "用户分组",
+        "auto": "auto",
+        "default": "default",
+        "vip": "vip"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-31T13:17:00.282743",
+    "data": {
+      "data": [
+        {
+          "model_name": "anthropic/claude-opus-4.5:thinking",
+          "quota_type": 0,
+          "model_ratio": 8,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "anthropic/claude-opus-4.5",
+          "quota_type": 0,
+          "model_ratio": 8,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "claude-opus-4-5-20251101",
+          "quota_type": 0,
+          "model_ratio": 2.065,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "deepseek/deepseek-v3.2-exp",
+          "original_model_name": "deepseek-v3.2-exp",
+          "quota_type": 0,
+          "model_ratio": 0.45,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 1.5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "xiaomi/mimo-v2-flash",
+          "original_model_name": "mimo-v2-flash",
+          "quota_type": 0,
+          "model_ratio": 0.21,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 3,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "claude-sonnet-4-5-20250929-thinking",
+          "quota_type": 0,
+          "model_ratio": 1.239,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "google/gemini-3-pro-mcpmark",
+          "quota_type": 0,
+          "model_ratio": 1,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 6,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5.1",
+          "original_model_name": "gpt-5.1",
+          "quota_type": 0,
+          "model_ratio": 1,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "gemini-3-pro-preview",
+          "quota_type": 0,
+          "model_ratio": 1,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 6,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "gemini",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-image-1.5",
+          "original_model_name": "gpt-image-1.5-c",
+          "quota_type": 1,
+          "model_ratio": 0,
+          "model_price": 0.1553,
+          "owner_by": "",
+          "completion_ratio": 0,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "image-generation",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "anthropic/claude-sonnet-4.5:thinking",
+          "quota_type": 0,
+          "model_ratio": 5.2,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5.1-codex",
+          "original_model_name": "gpt-5.1-codex",
+          "quota_type": 0,
+          "model_ratio": 0.6,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "claude-sonnet-4-5-20250929",
+          "quota_type": 0,
+          "model_ratio": 1.239,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5.2-codex",
+          "original_model_name": "gpt-5.2",
+          "quota_type": 0,
+          "model_ratio": 1.5,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "minimax/minimax-m2.1",
+          "original_model_name": "minimax-m2.1",
+          "quota_type": 0,
+          "model_ratio": 0.5,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 4.148,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-4.1",
+          "original_model_name": "gpt-4.1",
+          "quota_type": 0,
+          "model_ratio": 1.2,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 4,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5.1-codex-max",
+          "original_model_name": "gpt-5.1-codex-high",
+          "quota_type": 0,
+          "model_ratio": 0.6,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-4o-mini",
+          "original_model_name": "gpt-4o-mini",
+          "quota_type": 0,
+          "model_ratio": 0.075,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 4,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5-nano",
+          "original_model_name": "gpt-5-nano",
+          "quota_type": 0,
+          "model_ratio": 0.031,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "anthropic/claude-sonnet-4.5",
+          "quota_type": 0,
+          "model_ratio": 5.2,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "google/gemini-3-pro",
+          "original_model_name": "gemini-3-pro-preview-thinking",
+          "quota_type": 0,
+          "model_ratio": 1,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 6,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai",
+            "gemini"
+          ]
+        },
+        {
+          "model_name": "google/gemini-3-flash",
+          "original_model_name": "gemini-3-flash-preview-thinking",
+          "quota_type": 0,
+          "model_ratio": 0.18,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "gemini",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "deepseek/deepseek-r1",
+          "original_model_name": "deepseek-r1",
+          "quota_type": 0,
+          "model_ratio": 1.56,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 3.57,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5.2",
+          "quota_type": 0,
+          "model_ratio": 1.5,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "gemini-3-pro-image-preview",
+          "quota_type": 1,
+          "model_ratio": 0,
+          "model_price": 0.13,
+          "owner_by": "",
+          "completion_ratio": 0,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "gemini",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "gemini-3-flash-preview",
+          "quota_type": 0,
+          "model_ratio": 0.18,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "gemini",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-4.1-mini",
+          "original_model_name": "gpt-4.1-mini",
+          "quota_type": 0,
+          "model_ratio": 0.13,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 4,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "x-ai/grok-code-fast-1",
+          "original_model_name": "grok-code-fast-1",
+          "quota_type": 0,
+          "model_ratio": 0.32,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 7.5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "google/gemini-2.5-flash",
+          "original_model_name": "gemini-2.5-flash",
+          "quota_type": 0,
+          "model_ratio": 0.16,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8.333333333333334,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "gemini",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "kimi-k2.5",
+          "quota_type": 0,
+          "model_ratio": 0.3,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "gpt-image-1.5",
+          "quota_type": 1,
+          "model_ratio": 0,
+          "model_price": 0.1553,
+          "owner_by": "",
+          "completion_ratio": 0,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "image-generation",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "deepseek/deepseek-v3.2",
+          "original_model_name": "deepseek-v3.2",
+          "quota_type": 0,
+          "model_ratio": 0.45,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 1.5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "claude-haiku-4-5-20251001",
+          "quota_type": 0,
+          "model_ratio": 0.413,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5-codex",
+          "original_model_name": "gpt-5-codex-high",
+          "quota_type": 0,
+          "model_ratio": 0.6,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-4o",
+          "original_model_name": "gpt-4o",
+          "quota_type": 0,
+          "model_ratio": 0.9,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 4,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5.2-chat",
+          "original_model_name": "gpt-5.2-chat",
+          "quota_type": 0,
+          "model_ratio": 1.5,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "deepseek/deepseek-v3.2-exp-thinking",
+          "original_model_name": "deepseek-v3.2-exp-thinking",
+          "quota_type": 0,
+          "model_ratio": 0.45,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 1.5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "anthropic/claude-haiku-4.5",
+          "quota_type": 0,
+          "model_ratio": 0.875,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "deepseek/deepseek-r1-0528",
+          "original_model_name": "deepseek-r1-0528",
+          "quota_type": 0,
+          "model_ratio": 0.86,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 4.77,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "claude-opus-4-5-20251101-thinking",
+          "quota_type": 0,
+          "model_ratio": 2.065,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5-mini",
+          "original_model_name": "gpt-5-mini",
+          "quota_type": 0,
+          "model_ratio": 0.15,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "x-ai/grok-4.1-fast",
+          "original_model_name": "grok-4-1-fast-reasoning",
+          "quota_type": 0,
+          "model_ratio": 0.34,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 2.5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "anthropic/claude-haiku-4.5:thinking",
+          "quota_type": 0,
+          "model_ratio": 0.875,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "claude-haiku-4-5-20251001-thinking",
+          "quota_type": 0,
+          "model_ratio": 0.413,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-4.1-nano",
+          "original_model_name": "gpt-4.1-nano",
+          "quota_type": 0,
+          "model_ratio": 0.028,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 4,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5",
+          "original_model_name": "gpt-5",
+          "quota_type": 0,
+          "model_ratio": 1,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "google/gemini-2.5-pro",
+          "original_model_name": "gemini-2.5-pro",
+          "quota_type": 0,
+          "model_ratio": 1,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "gemini",
+            "openai"
+          ]
+        }
+      ],
+      "group_ratio": {
+        "default": 0.23,
+        "vip": 1
+      },
+      "success": true,
+      "usable_group": {
+        "": "用户分组",
+        "auto": "auto",
+        "default": "default",
+        "vip": "vip"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-01-31T14:20:57.571252",
+    "data": {
+      "data": [
+        {
+          "model_name": "deepseek/deepseek-v3.2-exp",
+          "original_model_name": "deepseek-v3.2-exp",
+          "quota_type": 0,
+          "model_ratio": 0.45,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 1.5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "x-ai/grok-code-fast-1",
+          "original_model_name": "grok-code-fast-1",
+          "quota_type": 0,
+          "model_ratio": 0.32,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 7.5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5",
+          "original_model_name": "gpt-5",
+          "quota_type": 0,
+          "model_ratio": 1,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "xiaomi/mimo-v2-flash",
+          "original_model_name": "mimo-v2-flash",
+          "quota_type": 0,
+          "model_ratio": 0.21,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 3,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "gemini-3-flash-preview",
+          "quota_type": 0,
+          "model_ratio": 0.18,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "gemini",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "deepseek/deepseek-r1-0528",
+          "original_model_name": "deepseek-r1-0528",
+          "quota_type": 0,
+          "model_ratio": 0.86,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 4.77,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5-mini",
+          "original_model_name": "gpt-5-mini",
+          "quota_type": 0,
+          "model_ratio": 0.15,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "gpt-image-1.5",
+          "original_model_name": "gpt-image-1.5-c",
+          "quota_type": 1,
+          "model_ratio": 0,
+          "model_price": 0.1553,
+          "owner_by": "",
+          "completion_ratio": 0,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "image-generation",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "anthropic/claude-sonnet-4.5",
+          "quota_type": 0,
+          "model_ratio": 5.2,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5-codex",
+          "original_model_name": "gpt-5-codex-high",
+          "quota_type": 0,
+          "model_ratio": 0.6,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "google/gemini-3-flash",
+          "original_model_name": "gemini-3-flash-preview-thinking",
+          "quota_type": 0,
+          "model_ratio": 0.18,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "gemini",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5.1",
+          "original_model_name": "gpt-5.1",
+          "quota_type": 0,
+          "model_ratio": 1,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "claude-opus-4-5-20251101-thinking",
+          "quota_type": 0,
+          "model_ratio": 2.065,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5.2-chat",
+          "original_model_name": "gpt-5.2-chat",
+          "quota_type": 0,
+          "model_ratio": 1.5,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "claude-haiku-4-5-20251001",
+          "quota_type": 0,
+          "model_ratio": 0.413,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-4.1",
+          "original_model_name": "gpt-4.1",
+          "quota_type": 0,
+          "model_ratio": 1.2,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 4,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "deepseek/deepseek-r1",
+          "original_model_name": "deepseek-r1",
+          "quota_type": 0,
+          "model_ratio": 1.56,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 3.57,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "x-ai/grok-4.1-fast",
+          "original_model_name": "grok-4-1-fast-reasoning",
+          "quota_type": 0,
+          "model_ratio": 0.34,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 2.5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5-nano",
+          "original_model_name": "gpt-5-nano",
+          "quota_type": 0,
+          "model_ratio": 0.031,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "anthropic/claude-haiku-4.5:thinking",
+          "quota_type": 0,
+          "model_ratio": 0.875,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-4.1-mini",
+          "original_model_name": "gpt-4.1-mini",
+          "quota_type": 0,
+          "model_ratio": 0.13,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 4,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-4.1-nano",
+          "original_model_name": "gpt-4.1-nano",
+          "quota_type": 0,
+          "model_ratio": 0.028,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 4,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "deepseek/deepseek-v3.2-exp-thinking",
+          "original_model_name": "deepseek-v3.2-exp-thinking",
+          "quota_type": 0,
+          "model_ratio": 0.45,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 1.5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "claude-opus-4-5-20251101",
+          "quota_type": 0,
+          "model_ratio": 2.065,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5.1-codex-max",
+          "original_model_name": "gpt-5.1-codex-high",
+          "quota_type": 0,
+          "model_ratio": 0.6,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "google/gemini-2.5-flash",
+          "original_model_name": "gemini-2.5-flash",
+          "quota_type": 0,
+          "model_ratio": 0.16,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8.333333333333334,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "gemini",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "claude-sonnet-4-5-20250929",
+          "quota_type": 0,
+          "model_ratio": 1.239,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "anthropic/claude-opus-4.5:thinking",
+          "quota_type": 0,
+          "model_ratio": 8,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-image-1.5",
+          "quota_type": 1,
+          "model_ratio": 0,
+          "model_price": 0.1553,
+          "owner_by": "",
+          "completion_ratio": 0,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "image-generation",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5.1-codex",
+          "original_model_name": "gpt-5.1-codex",
+          "quota_type": 0,
+          "model_ratio": 0.6,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "deepseek/deepseek-v3.2",
+          "original_model_name": "deepseek-v3.2",
+          "quota_type": 0,
+          "model_ratio": 0.45,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 1.5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "claude-haiku-4-5-20251001-thinking",
+          "quota_type": 0,
+          "model_ratio": 0.413,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5.2-codex",
+          "original_model_name": "gpt-5.2",
+          "quota_type": 0,
+          "model_ratio": 0.6,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "google/gemini-3-pro",
+          "original_model_name": "gemini-3-pro-preview-thinking",
+          "quota_type": 0,
+          "model_ratio": 1,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 6,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "gemini",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "kimi-k2.5",
+          "quota_type": 0,
+          "model_ratio": 0.3,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-5.2",
+          "quota_type": 0,
+          "model_ratio": 1.5,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "anthropic/claude-haiku-4.5",
+          "quota_type": 0,
+          "model_ratio": 0.875,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "claude-sonnet-4-5-20250929-thinking",
+          "quota_type": 0,
+          "model_ratio": 1.239,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "minimax/minimax-m2.1",
+          "original_model_name": "minimax-m2.1",
+          "quota_type": 0,
+          "model_ratio": 0.5,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 4.148,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "anthropic/claude-sonnet-4.5:thinking",
+          "quota_type": 0,
+          "model_ratio": 5.2,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "google/gemini-3-pro-mcpmark",
+          "quota_type": 0,
+          "model_ratio": 1,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 6,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "gemini-3-pro-preview",
+          "quota_type": 0,
+          "model_ratio": 1,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 6,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "gemini",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "anthropic/claude-opus-4.5",
+          "quota_type": 0,
+          "model_ratio": 8,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 5,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "anthropic",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "gemini-3-pro-image-preview",
+          "quota_type": 1,
+          "model_ratio": 0,
+          "model_price": 0.13,
+          "owner_by": "",
+          "completion_ratio": 0,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "gemini",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-4o",
+          "original_model_name": "gpt-4o",
+          "quota_type": 0,
+          "model_ratio": 0.9,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 4,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        },
+        {
+          "model_name": "google/gemini-2.5-pro",
+          "original_model_name": "gemini-2.5-pro",
+          "quota_type": 0,
+          "model_ratio": 1,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 8,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "gemini",
+            "openai"
+          ]
+        },
+        {
+          "model_name": "openai/gpt-4o-mini",
+          "original_model_name": "gpt-4o-mini",
+          "quota_type": 0,
+          "model_ratio": 0.05,
+          "model_price": 0,
+          "owner_by": "",
+          "completion_ratio": 4,
+          "enable_groups": [
+            "default"
+          ],
+          "supported_endpoint_types": [
+            "openai"
+          ]
+        }
+      ],
+      "group_ratio": {
+        "default": 0.23,
+        "vip": 1
+      },
+      "success": true,
+      "usable_group": {
+        "": "用户分组",
+        "auto": "auto",
+        "default": "default",
+        "vip": "vip"
+      }
+    }
+  }
+]
