@@ -5,44 +5,17 @@ Aiberm 模型推荐脚本
 """
 
 import json
+import sys
 from pathlib import Path
 from datetime import datetime
 
-HISTORY_FILE = Path(__file__).parent.parent / "references" / "price_history.json"
-
-# 模型分类和推荐策略
-MODEL_CATEGORIES = {
-    "claude": {
-        "name": "Claude 系列",
-        "models": ["claude-opus", "claude-sonnet", "claude-haiku"],
-        "desc": "Anthropic 的高质量推理模型",
-    },
-    "gpt": {
-        "name": "GPT 系列",
-        "models": ["gpt-5", "gpt-4"],
-        "desc": "OpenAI 的通用对话模型",
-    },
-    "gemini": {
-        "name": "Gemini 系列",
-        "models": ["gemini-3", "gemini-2.5"],
-        "desc": "Google 的多模态模型",
-    },
-    "deepseek": {
-        "name": "DeepSeek 系列",
-        "models": ["deepseek-r1", "deepseek-v3"],
-        "desc": "中文优化的开源模型",
-    },
-    "kimi": {
-        "name": "Kimi 系列",
-        "models": ["kimi-k2.5"],
-        "desc": "月之暗面的长文本模型",
-    },
-    "grok": {
-        "name": "Grok 系列",
-        "models": ["grok-4", "grok-code"],
-        "desc": "xAI 的快速推理模型",
-    },
-}
+# 导入常量配置
+from constants import (
+    HISTORY_FILE,
+    BASE_INPUT_PRICE,
+    BASE_OUTPUT_PRICE,
+    MODEL_CATEGORIES,
+)
 
 
 def load_latest_prices():
@@ -51,8 +24,15 @@ def load_latest_prices():
         print("❌ 价格历史文件不存在，请先运行 fetch_prices.py")
         return None
 
-    with open(HISTORY_FILE, "r", encoding="utf-8") as f:
-        history = json.load(f)
+    try:
+        with open(HISTORY_FILE, "r", encoding="utf-8") as f:
+            history = json.load(f)
+    except json.JSONDecodeError:
+        print("❌ 价格历史文件格式错误")
+        return None
+    except IOError as e:
+        print(f"❌ 读取价格历史失败: {e}")
+        return None
 
     if not history:
         print("❌ 价格历史为空")
@@ -92,13 +72,9 @@ def calculate_cost_per_million(model_data, group_ratio):
     model_ratio = model_data.get("model_ratio", 0)
     completion_ratio = model_data.get("completion_ratio", 1)
 
-    # 基准价格
-    base_input = 0.15
-    base_output = 0.6
-
     # 实际价格
-    input_price = base_input * model_ratio * group_ratio
-    output_price = base_output * completion_ratio * group_ratio
+    input_price = BASE_INPUT_PRICE * model_ratio * group_ratio
+    output_price = BASE_OUTPUT_PRICE * completion_ratio * group_ratio
 
     # 假设输入输出各 50 万 token
     avg_cost = (input_price + output_price) / 2
@@ -238,8 +214,6 @@ def find_alternatives(model_name, all_models, group_ratio):
 
 def main():
     """主函数"""
-    import sys
-
     # 加载最新价格
     latest = load_latest_prices()
     if not latest:

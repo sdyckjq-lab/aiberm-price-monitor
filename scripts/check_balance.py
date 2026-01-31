@@ -6,14 +6,17 @@ Aiberm 余额查询脚本
 
 import requests
 import json
-import os
+import sys
 from datetime import datetime
 from pathlib import Path
 
-# API 配置
-BASE_URL = "https://aiberm.com"
-USER_API = f"{BASE_URL}/api/user/self"
-CONFIG_FILE = Path(__file__).parent.parent / "config.json"
+# 导入常量配置
+from constants import (
+    USER_API,
+    CONFIG_FILE,
+    BALANCE_WARNING_LOW,
+    BALANCE_WARNING_CRITICAL,
+)
 
 
 def load_config():
@@ -31,8 +34,15 @@ def load_config():
         )
         return None
 
-    with open(CONFIG_FILE, "r", encoding="utf-8") as f:
-        return json.load(f)
+    try:
+        with open(CONFIG_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except json.JSONDecodeError:
+        print("❌ 配置文件格式错误，请检查 JSON 语法")
+        return None
+    except IOError as e:
+        print(f"❌ 读取配置文件失败: {e}")
+        return None
 
 
 def get_user_balance(system_token):
@@ -52,8 +62,17 @@ def get_user_balance(system_token):
             return None
 
         return data.get("data", {})
+    except requests.Timeout:
+        print("❌ 请求超时，请检查网络连接")
+        return None
+    except requests.ConnectionError:
+        print("❌ 连接失败，请检查网络连接")
+        return None
     except requests.RequestException as e:
         print(f"❌ 请求失败: {e}")
+        return None
+    except json.JSONDecodeError:
+        print("❌ API 返回数据解析失败")
         return None
 
 
@@ -92,9 +111,9 @@ def display_balance(user_data):
 
         # 余额预警
         if remaining is not None:
-            if remaining < 100:  # 少于1元
+            if remaining < BALANCE_WARNING_CRITICAL:  # 少于1元
                 print("\n⚠️  余额不足 ¥1，请及时充值！")
-            elif remaining < 500:  # 少于5元
+            elif remaining < BALANCE_WARNING_LOW:  # 少于5元
                 print("\n⚠️  余额较低，建议充值")
 
     # 请求统计
@@ -110,18 +129,18 @@ def main():
     config = load_config()
 
     if not config:
-        return
+        sys.exit(1)
 
     system_token = config.get("system_token")
     if not system_token:
         print("❌ 配置文件中缺少 system_token")
-        return
+        sys.exit(1)
 
     print("🔄 正在查询余额...")
     user_data = get_user_balance(system_token)
 
     if not user_data:
-        return
+        sys.exit(1)
 
     display_balance(user_data)
 

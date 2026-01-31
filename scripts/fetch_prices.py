@@ -6,16 +6,18 @@ Aiberm 价格查询脚本
 
 import requests
 import json
+import sys
 from datetime import datetime
 from pathlib import Path
 
-# API 配置
-PRICING_API = "https://aiberm.com/api/pricing"
-HISTORY_FILE = Path(__file__).parent.parent / "references" / "price_history.json"
-
-# 基准价格：输入 $0.15/百万token，输出 $0.6/百万token（NewAPI 默认）
-BASE_INPUT_PRICE = 0.15
-BASE_OUTPUT_PRICE = 0.6
+# 导入常量配置
+from constants import (
+    PRICING_API,
+    HISTORY_FILE,
+    BASE_INPUT_PRICE,
+    BASE_OUTPUT_PRICE,
+    MAX_HISTORY_RECORDS,
+)
 
 
 def fetch_current_prices():
@@ -30,8 +32,17 @@ def fetch_current_prices():
             return None
 
         return data
+    except requests.Timeout:
+        print("❌ 请求超时，请检查网络连接")
+        return None
+    except requests.ConnectionError:
+        print("❌ 连接失败，请检查网络连接")
+        return None
     except requests.RequestException as e:
         print(f"❌ 请求失败: {e}")
+        return None
+    except json.JSONDecodeError:
+        print("❌ API 返回数据解析失败")
         return None
 
 
@@ -100,25 +111,32 @@ def format_model_info(model_data, group_ratio):
 
 def save_to_history(pricing_data):
     """保存价格数据到历史记录"""
-    HISTORY_FILE.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        HISTORY_FILE.parent.mkdir(parents=True, exist_ok=True)
 
-    # 读取现有历史
-    history = []
-    if HISTORY_FILE.exists():
-        with open(HISTORY_FILE, "r", encoding="utf-8") as f:
-            history = json.load(f)
+        # 读取现有历史
+        history = []
+        if HISTORY_FILE.exists():
+            try:
+                with open(HISTORY_FILE, "r", encoding="utf-8") as f:
+                    history = json.load(f)
+            except (json.JSONDecodeError, IOError) as e:
+                print(f"⚠️  读取历史记录失败，将创建新记录: {e}")
+                history = []
 
-    # 添加新记录
-    record = {"timestamp": datetime.now().isoformat(), "data": pricing_data}
-    history.append(record)
+        # 添加新记录
+        record = {"timestamp": datetime.now().isoformat(), "data": pricing_data}
+        history.append(record)
 
-    # 只保留最近 30 条记录
-    history = history[-30:]
+        # 只保留最近 N 条记录
+        history = history[-MAX_HISTORY_RECORDS:]
 
-    with open(HISTORY_FILE, "w", encoding="utf-8") as f:
-        json.dump(history, f, ensure_ascii=False, indent=2)
+        with open(HISTORY_FILE, "w", encoding="utf-8") as f:
+            json.dump(history, f, ensure_ascii=False, indent=2)
 
-    print(f"✅ 价格已保存到历史记录（共 {len(history)} 条）")
+        print(f"✅ 价格已保存到历史记录（共 {len(history)} 条）")
+    except IOError as e:
+        print(f"❌ 保存历史记录失败: {e}")
 
 
 def display_prices(pricing_data, filter_model=None):
@@ -188,8 +206,6 @@ def display_prices(pricing_data, filter_model=None):
 
 def main():
     """主函数"""
-    import sys
-
     filter_model = sys.argv[1] if len(sys.argv) > 1 else None
 
     print("🔄 正在获取价格数据...")
